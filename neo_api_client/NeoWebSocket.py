@@ -179,8 +179,8 @@ class NeoWebSocket:
         # print("On Close Function is running!")
         if self.is_hsi_open == 1:
             self.is_hsi_open = 0
-        if self.on_close:
-            self.on_close()
+        # if self.on_close:
+        #     self.on_close()
 
     def on_hsm_error(self, error):
         if self.is_hsw_open == 1:
